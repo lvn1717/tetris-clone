@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  h1 {
+    position: absolute;
+    top: 10px;
+    font-size: 36px;
+    color: crimson;
+  }
+  
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 1px;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .active {
+    background-color: #f39c12;
+  }
+  
+  .filled {
+    background-color: #3498db;
+  }
+  
+  #score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: red;
+  }
+  
